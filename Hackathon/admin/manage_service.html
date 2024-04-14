@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <!-- this is a navbar code  -->
+        <div class="Navigation-bar">
+            <ul>
+                <div class="left-navbar">
+                    <!-- logo and name in the navbar is here  -->
+                    <li> <img class="logo" src="dashboard/delivery-truck.png" alt="logo"></li>
+                    <li class="logo_name">M&P</li>
+                </div>
+
+                <div class="Middle-navbar">
+                    <!-- dashboard button is here  -->
+                    <li> <button type="button" class="dashboard-btn" name="dashboard_btn"> Dashboard </button></li>
+
+                    <!-- dropdown for services  -->
+                    <li>
+                        <div class="dropdown">
+                            <button class="drop-btn">Services</button>
+                            <div class="dropdown-items">
+                                <a href="add_service.html">add service</a>
+                                <a href="manage_service.html">manage service</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- dropdown for pages  -->
+                    <li>
+                        <div class="dropdown">
+                            <button class="drop-btn">Pages</button>
+                            <div class="dropdown-items">
+                                <a href="#">contact us</a>
+                                <a href="#">about</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- dropdown for querys  -->
+                    <li>
+                        <div class="dropdown">
+                            <button class="drop-btn">Querys</button>
+                            <div class="dropdown-items">
+                                <a href="#">Readed</a>
+                                <a href="#">Unreaded</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- dropdown for Booking  -->
+                    <li>
+                        <div class="dropdown">
+                            <button class="drop-btn">Booking</button>
+                            <div class="dropdown-items">
+                                <a href="#">New</a>
+                                <a href="#">Old</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- dropdown for Search  -->
+                    <li>
+                        <div class="dropdown">
+                            <button class="drop-btn">Search</button>
+                            <div class="dropdown-items">
+                                <a href="#">Searching</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- dropdown for Admin  -->
+                    <li>
+                        <div class="admin-profile">
+                            <div class="dropdown">
+                                <img class="admin-btn" src="dashboard/admin.png" alt="admin">
+                                <div class="dropdown-items">
+                                    <a href="#">Edit Profile</a>
+                                    <a href="#">Change Password</a>
+                                    <a href="#">Recover Password</a>
+                                    <a href="#">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        
+       <div class="service-table">
+            <h1> <b> Manage Services</b> </h1>
+            <table>
+                <!-- Row Header  -->
+                <tr>
+                    <th style="width: 5%;" class="service-manage-sr-number" name="no">No</th>
+                    <th name="service_image">Image</th>
+                    <th name="service_name">Service Name</th>
+                    <th name="btns">Manage Service</th>
+                </tr>
+
+                <!-- 1st Row  -->
+                <tr>
+                    <td style="width: 5%;" name="no">1</td>
+                    <td name="service_image">
+                        <img src="dashboard/Service-1.jpg" alt="">
+                    </td>
+                    <td name="service_name">Transports Items</td>
+                    <td class="manage-btns" name="btns">
+                        <a class="edit-btn" href="edit_service.html">
+                           Edit
+                        </a>
+                        <a class="remove-btn" href="#">
+                            Remove
+                        </a>
+                    </td>
+                </tr>
+            </table>
+       </div>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- this is a navbar code  -->
+    <div class="Navigation-bar">
+        <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="services.html">Service</a> </li>
+            <li> <a href="request_quote.html">Request</a> </li>
+            <li> <a href="about_us.html">About us</a> </li>
+            <li> <a href="contact_us.html">Contact us</a> </li>
+            <li> <a href="admin_login.html"><img class="admin-btn" src="img/admin.png" alt="Admin"> Admin</a></li>
+        </ul>
+    </div>
+
+    <div class="request-form">
+
+        <center>
+            <div>
+                <h1><b>Make Request</b></h1>
+            </div>
+        </center>
+
+        <!-- <h2><b><center>Make Request</center></b></h2> -->
+        <form action="quote_list.php" method="post">
+            <label for="req_name">Name</label> <br>
+            <input class="req_input" type="text" name="req_name" placeholder="Name*" required>
+            <br><br>
+
+            <label for="req_email">Email</label> <br>
+            <input class="req_input" type="email" name="req_email" placeholder="Email*" required>
+            <br><br>
+
+            <label for="req_mobile">Mobile No.</label> <br>
+            <input class="req_input" type="number" name="req_mobile" placeholder="Mobile Number*" required>
+            <br><br>
+
+            <label for="req_origin">Where do you want to Packers and Movers Service?</label> <br>
+            <input class="req_input" type="text" name="req_origin" placeholder="Origin*" required>
+            <br><br>
+
+            <label for="req_destination">Where are you shifting?</label> <br>
+            <input class="req_input" type="text" name="req_destination" placeholder="Destination" required>
+            <br><br>
+
+            <label for="date">Date of Shifting</label>
+            <input style="padding-left: 10px;" type="date" name="req_date" required>
+            <br><br>
+
+            <label for="date">What do you want to Shift?</label>
+            <select id="req_quanity" required>
+                <option name="req_quanty" value="3Bhk $1000" >3Bhk $1000</option>
+                <option name="req_quanty" value="2Bhk $1000">2Bhk $500</option>
+                <option name="req_quanty" value="1Bhk $1000">1Bhk $250</option>
+                <option name="req_quanty" value="Limited items ($20 per item)">Limited items ($20 per item) </option>
+            </select>
+            <br><br>
+
+            <label for="req_description">Description</label><br>
+            <textarea style="width:600px; border: 2px solid black;" name="req_description" cols="30" rows="5"
+                placeholder="Description" required>  </textarea>
+            <br><br>
+
+
+            <div class="submit-request">
+                <center><input type="submit" name="req_submit" value="Submit"></center>
+            </div>
+        </form>
+    </div>
+
+    <!-- footer content goes here,
+    here we can importatnt information of website  -->
+    <footer>
+        <div class="footer-area">
+            <table>
+                <tr>
+                    <th>Contact</th>
+                    <th>Branches</th>
+                    <th>Services</th>
+                </tr>
+                <tr>
+                    <td><a href="#">info</a></td>
+                    <td><a href="#">info</a></td>
+                    <td><a href="#">info</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">info</a></td>
+                    <td><a href="#">info</a></td>
+                    <td><a href="#">info</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">info</a></td>
+                    <td><a href="#">info</a></td>
+                    <td><a href="#">info</a></td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Update Service </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- this is a navbar code  -->
+    <div class="Navigation-bar">
+        <ul>
+            <div class="left-navbar">
+                <!-- logo and name in the navbar is here  -->
+                <li> <img class="logo" src="dashboard/delivery-truck.png" alt="logo"></li>
+                <li class="logo_name">M&P</li>
+            </div>
+
+            <div class="Middle-navbar">
+                <!-- dashboard button is here  -->
+                <li> <button type="button" class="dashboard-btn" name="dashboard_btn"> Dashboard </button></li>
+
+                <!-- dropdown for services  -->
+                <li>
+                    <div class="dropdown">
+                        <button class="drop-btn">Services</button>
+                        <div class="dropdown-items">
+                            <a href="add_service.html">add service</a>
+                            <a href="manage_service.html">manage service</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- dropdown for pages  -->
+                <li>
+                    <div class="dropdown">
+                        <button class="drop-btn">Pages</button>
+                        <div class="dropdown-items">
+                            <a href="#">contact us</a>
+                            <a href="#">about</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- dropdown for querys  -->
+                <li>
+                    <div class="dropdown">
+                        <button class="drop-btn">Querys</button>
+                        <div class="dropdown-items">
+                            <a href="#">Readed</a>
+                            <a href="#">Unreaded</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- dropdown for Booking  -->
+                <li>
+                    <div class="dropdown">
+                        <button class="drop-btn">Booking</button>
+                        <div class="dropdown-items">
+                            <a href="#">New</a>
+                            <a href="#">Old</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- dropdown for Search  -->
+                <li>
+                    <div class="dropdown">
+                        <button class="drop-btn">Search</button>
+                        <div class="dropdown-items">
+                            <a href="#">Searching</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- dropdown for Admin  -->
+                <li>
+                    <div class="admin-profile">
+                        <div class="dropdown">
+                            <img class="admin-btn" src="dashboard/admin.png" alt="admin">
+                            <div class="dropdown-items">
+                                <a href="#">Edit Profile</a>
+                                <a href="#">Change Password</a>
+                                <a href="#">Recover Password</a>
+                                <a href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+
+    <!-- Add new service  -->
+    <div class="Add-Services-form">
+        <!-- Heading of add service form -->
+        <center>
+            <h1><b>Update Service</b></h1>
+        </center>
+
+        <form action=".php" method="post">
+            <!-- new service name is here  -->
+            <label>New Name</label> <br>
+            <input class="add-service-input" type="update_text" name="name" placeholder="Service Name" required>
+            <br><br>
+
+            <!-- new service description is here  -->
+            <label>New Description</label> <br>
+            <textarea class="add-service-input" name="update_desc" cols="30" rows="5" placeholder="Description"
+                required></textarea>
+            <br><br>
+
+            <!-- add new image here  -->
+            <label>Image</label> <br>
+            <input class="add-service-input" type="file" name="update_img" placeholder="insert image">
+            <br><br>
+
+            <!-- this is your submit button  -->
+            <center>
+                <input class="new-service-add-btn" type="submit" name="update_service" value="update">
+            </center>
+        </form>
+    </div>
+</body>
+</html>

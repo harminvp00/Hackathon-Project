@@ -1,0 +1,334 @@
+
+/* imported fonts and other package */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* default CSS setting for all html elements  */
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* .Navigation-bar CSS is Here  */
+.Navigation-bar {
+    margin-top: .5%;
+    background-color: #2962AD;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 100px;
+}
+
+.Navigation-bar ul {
+    position: relative;
+    right: 20%;
+}
+
+/* left navaigation logo and name css is here  */
+.left-navbar {
+    margin-top: 15px;
+    display: inline-block;
+    position: relative;
+    right: 10%;
+}
+
+/* middle navbar all dropdown item + dashboard btn + admin btn css is here  */
+.Middle-navbar {
+    display: inline-block;
+    position: relative;
+    left:850px;
+    bottom: 84px;
+}
+.Middle-navbar li{
+    margin-top: 20px;
+}
+
+/* navbar CSS for <a> tag */
+.Middle-navbar li a {
+    color: white;
+    font-size: 20px
+}
+
+.Navigation-bar li {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 15px;
+    position: relative;
+    bottom: 20px;
+}
+
+.Navigation-bar a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+/* css for logo on navabar  */
+.logo {
+    position: relative;
+    top: 20px;
+    left: 46%;
+    width: 11%;
+    height: 11%;
+    z-index: 1;
+}
+
+ /* this is css for M&P name  */
+.logo_name {
+    font-size: 20px;
+    color: white;
+    position: relative;
+    right: 10px;
+    bottom: 30px;
+}
+
+.logo:hover {
+    border-radius: 50%;
+    background-color: #5c93db;
+}
+
+
+/* this .dashboard-btn css on navbar  */
+.dashboard-btn {
+    font-size: 20px;
+    background-color: #2962AD;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.dashboard-btn:hover {
+    background-color: #5c93db;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+
+/* all dropdown css is here  */
+.drop-btn {
+    font-size: 20px;
+    background-color: #2962AD;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.dropdown {
+    margin-left: 10px 15px;
+}
+
+/* CSS for a tag   */
+.dropdown a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+/* CSS for dropdown items  */
+.dropdown-items {
+    display: none;
+    position: absolute;
+    background-color: #2962AD;
+    min-width: 100px;
+}
+
+.dropdown:hover .dropdown-items {
+    display: block;
+    z-index: 1;
+}
+
+.dropdown:hover .drop-btn {
+    background-color: #5c93db;
+    color: black;
+    border: none;
+}
+
+.dropdown a:hover {
+    background-color: #5c93db;
+    color: black;
+    border: none;
+}
+
+.admin-profile {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+/* CSS for hover for admin btn  */
+.admin-profile:hover {
+    background-color: #5c93db;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* CSS for admin btn at rigth corner */
+.admin-btn {
+    position: relative;
+    top:5px;
+    width: 30px;
+    height: 30px;
+}
+
+/* css for main-block in index.html  */
+.Main-Block {
+    display: flex;
+    flex-direction: column;
+    width: 400;
+    height: 400px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+/* first row of dashboard service block  */
+.first {
+    display: flex;
+}
+
+/* first row of dashboard service block  */
+.second {
+    margin-top: 1%;
+    display: flex;
+}
+
+/* CSS for every Service block on  dashboard  */
+.Main-Block .Block {
+    position: relative;
+    top: -1%;
+    left: 1%;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+}
+
+/* CSS for Main block */
+.Main-Block img {
+    margin-top: 40px;
+    width: 150px;
+    height: 150px;
+}
+
+/* CSS for paragraph  */
+.Main-Block p {
+    margin-top: 10px;
+    width: 150px;
+    height: 100px;
+}
+
+/* adding new service pages CSS code  
+-> CSS for add_service.html file  */
+
+/* CSS for Add service form  */
+.Add-Services-form {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    left: 30%;
+    padding: 20px 40px;
+    border-radius: 50px;
+    background-color: whitesmoke;
+}
+
+.Add-Services-form form{
+    margin-top: 20px;
+}
+
+/* CSS for input tag */
+.Add-Services-form .add-service-input {
+    width: 400px;
+}
+
+/* CSS placeholder of inputs  */
+.Add-Services-form .add-services-input::placeholder {
+    text-align: center;
+}
+
+/* CSS for Add Button  */
+.Add-Services-form form .new-service-add-btn {
+    background-color: #2962AD;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 50px;
+}
+
+/* CSS Code for manage_service.html */
+
+/* CSS for manage_service.html */
+
+
+/* heading css for h1 tag  */
+.service-table h1 {
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    font-size: 50px;
+}
+
+/* CSS for service manage table */
+.service-table {
+    margin-left: 1%;
+    margin-right: 0%;
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 1%;
+}
+
+/* CSS for table colunm header  */
+.service-table tr th {
+    text-align: center;
+    width: 10%;
+    border: 4px solid black;
+    padding: 10px;
+}
+
+/* CSS for table colunm  */
+.service-table tr td {
+    text-align: center;
+    width: 10%;
+    border: 4px solid black;
+    padding: 10px;
+}
+
+/* CSS for image inside table row  */
+.service-table tr img {
+    width: 100px;
+    height: 100px;
+}
+
+/* CSS for Edit Button  */
+.service-table table tr .manage-btns .edit-btn{
+    text-decoration: none;
+    color: black;
+    border: none;
+    width: 50%;
+    background-color: rgb(26, 216, 26);
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+/* CSS for Remove Button  */
+.service-table table tr .manage-btns .remove-btn {
+    text-decoration: none;
+    color: black;
+    border: none;
+    width: 50%;
+    color: white;
+    background-color: rgb(201, 49, 49);
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
